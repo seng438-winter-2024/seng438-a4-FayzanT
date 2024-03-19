@@ -56,6 +56,15 @@
 
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 
+### Equivalent mutants, which do not alter the functionality from the original code, inherently cannot be detected by test suites since they don't introduce detectable faults. Their presence in the mutation analysis can misleadingly lower the mutation score, suggesting a less effective test suite than it might actually be. This is because the mutation score is calculated based on the ratio of killed mutants to the total number of non-equivalent mutants. When equivalent mutants are included in this total, they artificially inflate the number of mutants that the test suite appears unable to kill, thus decreasing the mutation score.
+
+### From the analyses presented by Pitest, it's clear that part of the effort in improving mutation scores involved identifying and enhancing test coverage to kill mutants that survived initial testing. However, the presence of equivalent mutants complicates this process. Specifically, the inability to kill certain mutants may not reflect a deficiency in the test suite but rather the benign nature of the mutations themselves. For instance, subtle changes in the Range class that don't effectively alter its boundary conditions or behavior under specific inputs might remain undetected by even a robust test suite, not due to oversight but due to the mutants' equivalence to the original code.
+
+### The discussion emphasizes the importance of accurately identifying equivalent mutants to refine the mutation score. Removing or accounting for these mutants can provide a more accurate representation of the test suite's effectiveness. However, the process of identifying equivalent mutants often involves manual inspection and can be inherently challenging and subjective, adding complexity to mutation testing efforts.
+
+### Thus, while the mutation testing conducted offers valuable insights into potential areas for enhancing the test suites for Range and DataUtilities, the influence of equivalent mutants highlights an inherent limitation of mutation testing. It underlines the need for careful analysis and possibly manual review to ensure the mutation score accurately reflects the test suite's capability to detect genuine faults in the code.
+
+
 # A discussion of what could have been done to improve the mutation score of the test suites
 
 ## To specifically boost our mutation score for DataUtilities and Range, here’s what we can do:
