@@ -5,9 +5,11 @@
 | Group \#:      |     |
 | -------------- | --- |
 | Student Names: |     |
-|                |     |
-|                |     |
-|                |     |
+|     Qazi Ali           |     |
+|     Shayyan Asim          |     |
+|     Rohan Kapila           |     |
+|     Fayzan Toor           |     |
+
 
 # Introduction
 In this lab we explored mutation testing and GUI testing. Mutation testing is the process of creating many mutations and testing it with our given tests. Tests can survive or be killed depending on the results. We also utilised the selenium IDE to do the GUI testing by creating test cases regarding logout, search, add to cart, chat bot, and delete from cart. 
