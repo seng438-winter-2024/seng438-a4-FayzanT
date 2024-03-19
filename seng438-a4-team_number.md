@@ -98,3 +98,5 @@ Precisely interacts with web elements.
 
 
 # Comments/feedback on the lab itself
+
+  The lab itself went pretty smooth and was staraightfoward, we learned more about mutation testing while presenting to the TA and the TA also explained some features of Selenium to us and how it is used in the industry. One feedback that we would like to give is that the lab ended really late compared to the other labs we had to wait to 2 hours to present it to the TA but overall it was a pretty good experince.
