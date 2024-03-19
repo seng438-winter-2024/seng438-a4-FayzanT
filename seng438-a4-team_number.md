@@ -54,6 +54,20 @@
 
 # Analysis drawn on the effectiveness of each of the test classes
 
+## The mutation testing for the Range and DataUtilities test classes provides key insights into their effectiveness:
+
+### Range Class: Initially scored 59% in mutation testing, improved to 69% through targeted enhancements. This indicates a solid foundation with room for improvement, especially in edge cases and boundary conditions. The effort to improve the test suite highlighted the importance of continuously refining tests to cover subtle scenarios that could lead to undetected bugs.
+
+### DataUtilities Class: Maintained a high mutation score of 32%, suggesting excellent test coverage and effectiveness in detecting faults. Despite attempts to improve, the score moved to 59%. This reflects the challenge of improving test suites with already high effectiveness and points to the diminishing returns of addressing more complex or less likely scenarios.
+
+### Overall, both test suites demonstrate strong testing practices but also underline the continuous need for refinement, particularly in handling edge cases and achieving practical versus theoretical test coverage.
+
+
+
+
+
+
+
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 
 ### Equivalent mutants, which do not alter the functionality from the original code, inherently cannot be detected by test suites since they don't introduce detectable faults. Their presence in the mutation analysis can misleadingly lower the mutation score, suggesting a less effective test suite than it might actually be. This is because the mutation score is calculated based on the ratio of killed mutants to the total number of non-equivalent mutants. When equivalent mutants are included in this total, they artificially inflate the number of mutants that the test suite appears unable to kill, thus decreasing the mutation score.
