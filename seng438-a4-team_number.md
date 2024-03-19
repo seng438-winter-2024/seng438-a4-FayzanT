@@ -15,6 +15,28 @@
 ### In this lab we explored mutation testing and GUI testing. Mutation testing is the process of creating many mutations and testing it with our given tests. Tests can survive or be killed depending on the results. We also utilised the selenium IDE to do the GUI testing by creating test cases regarding logout, search, add to cart, chat bot, and delete from cart. 
 
 # Analysis of 10 Mutants of the Range class 
+## Here's a brief analysis of 10 specific mutants and insights into what their survival indicates about the test suite's coverage and sensitivity to certain changes.
+
+### Decremented -- double local variable number 1 at line 91: This suggests the test suite did not check the behavior just below the lower boundary of the range, missing a decrement scenario.
+
+### Incremented ++ double local variable number 1 at line 91: Similarly, an increment scenario just above the lower boundary was not covered, indicating the need for finer granularity in boundary testing.
+
+### Decremented -- double field lower at line 105: The absence of tests specifically reacting to a direct decrease of the lower bound means direct modifications to the Range object's state aren't sufficiently tested.
+
+### Incremented ++ double field upper at line 114: Like the decrement mutants, this shows the test suite's insufficiency in capturing minor increments to the upper boundary.
+
+### Decremented -- double field upper at line 132: The test suite likely missed edge cases where the upper bound is slightly less than its original value, suggesting a gap in coverage for decrement operations.
+
+### Incremented ++ double field lower at line 157: This points to a lack of tests for scenarios where the lower bound is increased, emphasizing a need for more comprehensive state mutation testing.
+
+### Changed conditional boundary at line 157: The survival of this mutant indicates that boundary conditions, especially those that are crucial for determining range inclusivity or exclusivity, are not thoroughly tested.
+
+### Decremented -- double local variable number 3 at line 158: The survival here suggests the tests do not account for the decrement of key variables within methods, missing potential bugs.
+
+### Substituted 1 with -1 at line 158: This implies tests are insensitive to sign changes in the values, which could affect the logic in subtle ways not captured by the current suite.
+
+### Greater than to greater or equal at line 161: The presence of this surviving mutant underscores a lack of testing around boundary inclusivity, an area critical for correctly defining ranges.
+
 
 # Report all the statistics and the mutation score for each test class
 
