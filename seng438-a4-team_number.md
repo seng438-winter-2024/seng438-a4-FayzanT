@@ -36,6 +36,26 @@
 
 # A discussion of what could have been done to improve the mutation score of the test suites
 
+## To specifically boost our mutation score for DataUtilities and Range, here’s what we can do:
+
+### Incorporate Diverse Data Scenarios: For DataUtilities, let's include tests with various datasets, especially focusing on edge cases like empty arrays, null values, extreme values, and datasets with a mix of positive and negative numbers.
+
+### Conduct Boundary Value Testing on Range: With Range, it's crucial that we test boundary conditions, including the limits of the range and special cases using Double.MAX_VALUE, Double.MIN_VALUE, Double.POSITIVE_INFINITY, Double.NEGATIVE_INFINITY, and Double.NaN.
+
+### Test Against Invalid Parameters: We need to ensure our tests for both classes rigorously check how methods handle invalid parameters, ensuring that exceptions are properly thrown and handled.
+
+### Verify State Changes Accurately: In Range, we should meticulously test state changes such as range shifts and expansions to confirm these operations maintain the range's integrity and enforce expected boundaries.
+
+### Explore Combination Cases: We'll test methods that combine data or ranges, making sure to cover scenarios with different datasets or ranges that are overlapping, non-overlapping, or edge-adjacent.
+
+### Ensure Floating-point Precision: For Range, it’s important that we precisely test floating-point operations, mindful of the intricacies of floating-point arithmetic, especially in methods that calculate or compare values.
+
+### Test Under Extreme Conditions: We should push DataUtilities and Range to their limits with tests involving large datasets or ranges spanning wide or narrow bounds to verify both performance and accuracy under stress.
+
+### Iteratively Enhance Tests: As we evolve our code, we’ll also iteratively refine our tests, using outcomes from previous mutation tests as a guide to continually target and improve areas of weak test coverage.
+
+### By focusing on these strategies, we’re not just aiming to enhance our mutation score; we’re working toward making our test suite more comprehensive and our codebase more robust.
+
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
 ### Mutation testing is a technique used to evaluate the quality of software tests. It involves modifying a program's source code in small ways (creating mutants) to create new versions of the program. Each change is designed to test different aspects of the original test suite's ability to detect errors. The main goal is to assess the effectiveness of test cases in finding potential bugs.
 
