@@ -90,6 +90,36 @@
 
 # how did you test each functionaity with different test data
 
+## For DataUtilities:
+### Testing Array Creation: We tested the creation of number arrays from double arrays with normal values (e.g., 4.5, 5.6) to ensure that the function correctly converts these values into Number objects. This checks the functionality against typical data.
+
+### Null and Edge Cases: We explicitly tested methods with null inputs (e.g., createNumberArray(null)) to ensure they throw the expected exceptions, safeguarding against improper use of the API.
+
+### Cumulative Percentages: We mocked KeyedValues to test getCumulativePercentages with predefined values, ensuring the method calculates cumulative percentages accurately for a range of input values, including zeros and positive numbers.
+
+### Total Calculations: We tested calculateRowTotal and calculateColumnTotal methods with mocked Values2D objects, supplying various scenarios, including positive values, to verify total calculations are correct. This included handling of zero rows or columns to ensure robustness in edge scenarios.
+
+## For Range:
+### Constructor Validity: Tests were conducted with valid ranges, including negative to positive ranges, zero-length ranges (e.g., new Range(1, 1)), and ranges with bounds at extreme values of double precision to ensure the constructor sets up the range correctly under diverse conditions.
+
+### Boundary Conditions: We tested methods like contains and intersects with values at the edges of the ranges, including exact matches to the range boundaries, to ensure correct boundary inclusivity or exclusivity as per the method's contract.
+
+### Special Values Handling: We included tests for handling Double.NaN, Double.POSITIVE_INFINITY, and Double.NEGATIVE_INFINITY within ranges, such as expanding a range to include infinity or ensuring NaN values are handled according to the method's specifications.
+
+### State Mutation Operations: Through methods like shift and expand, we manipulated range objects with both positive and negative deltas, and scaling factors, including tests to ensure that the shift method respects zero-crossing rules and that ranges do not become invalid after operations.
+
+### Equality and Hashing: We ensured that ranges are equal only if their lower and upper bounds are the same, tested through equals method, and verified that hashCode is consistent with equals, providing a thorough test of the object's contract.
+
+## General Observations:
+### Mocking for Isolation: Especially in DataUtilities tests, mocking (e.g., Values2D and KeyedValues) was used to isolate the method being tested, ensuring that the tests are focused on the functionality of the method itself rather than dependencies.
+
+### Handling Exceptions: Tests were designed to ensure that methods throw exceptions under invalid input conditions, such as passing null where it’s not allowed, thereby validating the robustness of the error handling.
+
+### Comprehensive Testing: Across both classes, a broad range of input data was used to ensure that the functionality is tested against as wide a range of conditions as possible, including positive and negative numbers, boundaries of data types, and special floating-point values.
+
+### This approach to testing with diverse test data ensures that the functionalities of DataUtilities and Range are thoroughly vetted for correctness, robustness, and reliability across a spectrum of possible use cases.
+
+
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 ## Selenium:
 
