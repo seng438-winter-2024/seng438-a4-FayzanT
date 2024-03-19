@@ -58,6 +58,12 @@ In this lab we explored mutation testing and GUI testing. Mutation testing is th
 
 # Explain your SELENUIM test case design process
 
+
+### In our Selenium test case design process, we began by identifying and prioritizing common functionalities that required testing. This initial step involved a collaborative discussion within the team, focusing on essential features of Samsung's website, such as navigating to the homepage, adding items to the cart, removing items from the cart, and interacting with the navigation bar.
+
+### To ensure thorough coverage and reliability, we adopted a systematic approach, emphasizing the individual testing of each functionality. This isolation strategy allows for precise identification of issues related to specific features, enhancing the effectiveness of our testing efforts. By meticulously designing our test cases to target these key functionalities, we aimed to comprehensively evaluate the website's performance and usability, ensuring a seamless user experience.
+
+### Furthermore, to refine our process and outcomes, we incorporated best practices in test case design, such as defining clear and concise test steps, establishing expected results for each action, and employing assertions to validate the correctness of the application's behavior. This structured approach not only facilitated a more organized testing workflow but also improved the maintainability and scalability of our test suite, enabling us to adapt quickly to changes in the application's features or functionality.
 # Explain the use of assertions and checkpoints
 
 ### Assertions and checkpoints are used in automated testing to verify that the software behaves as expected at specific points during a test. Assertions evaluate conditions to be true or false, ensuring the application meets certain criteria. Checkpoints verify specific aspects of the application's state, like the presence of UI elements or the correctness of data output. Both are crucial for identifying defects and ensuring software quality.
@@ -71,7 +77,7 @@ In this lab we explored mutation testing and GUI testing. Mutation testing is th
 
 ### Supports multiple programming languages and browsers.
 ### Has a large community and extensive integration options.
-Precisely interacts with web elements.
+### Precisely interacts with web elements.
 ## Disadvantages:
 
 ### Steep learning curve due to the need for programming knowledge.
@@ -94,9 +100,9 @@ Precisely interacts with web elements.
 ### The team work was divided in group of twos. Where each group took over one class for mutant testing. Qazi and Rohan did DataUtilities mutant coverarage where as Fayzan and Shayyan did Range mutant coverage. For GUI testing, we took over samsung's web page and each member tested two functionalities with the help of Selenium. For group report everyone did it together , we discussed each question as a group before answering it.
 
 # Difficulties encountered, challenges overcome, and lessons learned
- The PITest took a long time to run for each of the cases. This made increasing the mutation coverage a bit difficult due to having to decide if we should create an abundance of test cases to test at once, or risk testing a couple and not having any increase in our coverage. We also had to make sure all our test cases passed before we ran the PITest, so this made us abandon a couple of cases that could've increased the coverage. To overcome this, we made sure to double check all our cases to make sure they passed and had meaningful additions before running the test. For Selenium, we also had some issues with having our scripts work in the recording, but not while replaying. We solved this issue by making sure we tested the function as quickly as possible to avoid delays.
+ ### The PITest took a long time to run for each of the cases. This made increasing the mutation coverage a bit difficult due to having to decide if we should create an abundance of test cases to test at once, or risk testing a couple and not having any increase in our coverage. We also had to make sure all our test cases passed before we ran the PITest, so this made us abandon a couple of cases that could've increased the coverage. To overcome this, we made sure to double check all our cases to make sure they passed and had meaningful additions before running the test. For Selenium, we also had some issues with having our scripts work in the recording, but not while replaying. We solved this issue by making sure we tested the function as quickly as possible to avoid delays.
 
 
 # Comments/feedback on the lab itself
 
-  The lab itself went pretty smooth and was staraightfoward, we learned more about mutation testing while presenting to the TA and the TA also explained some features of Selenium to us and how it is used in the industry. One feedback that we would like to give is that the lab ended really late compared to the other labs we had to wait to 2 hours to present it to the TA but overall it was a pretty good experince.
+  ### The lab itself went pretty smooth and was staraightfoward, we learned more about mutation testing while presenting to the TA and the TA also explained some features of Selenium to us and how it is used in the industry. One feedback that we would like to give is that the lab ended really late compared to the other labs we had to wait to 2 hours to present it to the TA but overall it was a pretty good experince.
