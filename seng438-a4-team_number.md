@@ -17,12 +17,13 @@ In this lab we explored mutation testing and GUI testing. Mutation testing is th
 # Report all the statistics and the mutation score for each test class
 
 
-## DataUtilities Coverage 
+## DataUtilities Mutation Coverage 
 ### Increased from 32% to 59%
 <img width="961" alt="image" src="https://github.com/seng438-winter-2024/seng438-a4-FayzanT/assets/113921998/048a9b27-2ee5-4cb5-84ab-7b4e19f41c74">
 <img width="953" alt="image" src="https://github.com/seng438-winter-2024/seng438-a4-FayzanT/assets/113921998/faf6d822-4aac-4279-a55c-c2b11987c0e6">
 
-
+## Range Mutation Coverage 
+### Increased from 59% to 69%
 <img width="954" alt="image" src="https://github.com/seng438-winter-2024/seng438-a4-FayzanT/assets/113921998/ac1ac714-2f90-40a0-8e4d-2b0eb42dd452">
 <img width="959" alt="image" src="https://github.com/seng438-winter-2024/seng438-a4-FayzanT/assets/113921998/1e4a0310-4def-4eaa-8ccd-13660a15f9cf">
 
